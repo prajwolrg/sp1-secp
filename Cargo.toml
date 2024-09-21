@@ -1,0 +1,12 @@
+[package]
+version = "0.1.0"
+name = "guest-secp"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = "2.0.0"
+secp256k1 = { version = "0.29", features = ["recovery", "global-context"] }
+alloy-primitives = "0.8.3"
+
+[patch.crates-io]
+secp256k1 = { git = "https://github.com/sp1-patches/rust-secp256k1", branch = "patch-secp256k1-v0.29.0-old" }
