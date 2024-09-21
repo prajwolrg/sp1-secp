@@ -7,6 +7,7 @@ edition = "2021"
 sp1-zkvm = "2.0.0"
 secp256k1 = { version = "0.29", features = ["recovery", "global-context"] }
 alloy-primitives = "0.8.3"
+bitcoin = "0.32.2"
 
 [patch.crates-io]
-secp256k1 = { git = "https://github.com/sp1-patches/rust-secp256k1", branch = "patch-secp256k1-v0.29.0-old" }
+secp256k1 = { git = "https://github.com/prajwolrg/rust-secp256k1", branch = "0.29.x-sp1-patch" }
